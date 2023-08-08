@@ -22,7 +22,7 @@ In decryption, The process begins with the inverse round key. The algorithm then
 
 # Minimum software requirements
 <ul = *> 
-<li> Windows 10, 11 (x86/x64)</li>
+<li> Windows 10, 11 Operating System.</li>
 </ul>
 
 # Warning
@@ -32,4 +32,4 @@ During Encryption AES256 will remove original file.
 Code licensed under the MIT.
 
 # contact
-outlook  the.boring.software@outlook.com
+outlook - the.boring.software@outlook.com
