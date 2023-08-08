@@ -14,12 +14,16 @@ The basic concept of encryption is that the cipher replaces each unit of informa
 # How does AES256 decrypt your data
 In decryption, The process begins with the inverse round key. The algorithm then reverses every action. Namely, Shifting rows, Byte substitution, and column mixing, Until it deciphers the original data.
 
-# Installing AES256 
-<h4> Minimum hardware requirements </h4>
+# Minimum hardware requirements
 <ul = *> 
-<li> 1 GB of RAM </ul>li>
+<li> 1 GB of RAM </li>
 <li> 1 GB of drive space </li>
-<ul>
+</ul>
+
+# Minimum software requirements
+<ul = *> 
+<li> Windows 10, 11 (x86/x64)</li>
+</ul>
 
 # Warning
 During Encryption AES256 will remove original file.
