@@ -1,5 +1,5 @@
 # About
-AES256 is a Windows application written in Microsoft Visual C++ that offer encryption and decryption. It use symmetric key algorithm, Which mean it use the same key to encrypt and decrypt your data.
+AES256 is a Windows application written in Microsoft Visual C++ that offer file encryption and decryption. It use symmetric key algorithm, Which mean it use the same key to encrypt and decrypt your data.
 <br>
 <br>
 This version 1.0.0 has been released and fully tested on Windows 10, 11 (x86) Operating System.
