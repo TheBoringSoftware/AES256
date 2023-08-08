@@ -28,8 +28,5 @@ In decryption, The process begins with the inverse round key. The algorithm then
 # Warning
 During Encryption AES256 will remove original file.
 
-# License
-Code licensed under the MIT.
-
 # contact
 outlook - the.boring.software@outlook.com
