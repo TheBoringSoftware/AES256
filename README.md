@@ -2,9 +2,9 @@
 AES256 is a Windows application written in Microsoft Visual C++ that offer encryption and decryption. It use symmetric key algorithm, Which mean it use the same key to encrypt and decrypt your data.
 <br>
 <br>
-This version 1.0 has been released and fully tested on Windows 10, 11 (x86) Operating System.
+This version 1.0.0 has been released and fully tested on Windows 10, 11 (x86) Operating System.
 
-# Is AES256 is Secure
+# Is AES256 is secure
 
 AES256 has a key length of 256 bits, supports the largest bit size and is practically unbreakable by brute force based on current computing power standards. If you still don’t understand how big it is, let’s put it this way. It’s so big that it’s exponentially greater than the number of atoms in the observable universe.
 
