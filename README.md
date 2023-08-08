@@ -15,10 +15,10 @@ The basic concept of encryption is that the cipher replaces each unit of informa
 In decryption, The process begins with the inverse round key. The algorithm then reverses every action. Namely, Shifting rows, Byte substitution, and column mixing, Until it deciphers the original data.
 
 # Installing AES256 
-<h4> Minimum hardware requirements <h4>
+<h4> Minimum hardware requirements </h4>
 <ul = *> 
-<li> 1 GB of RAM <li>
-<li> 1 GB of drive space <li>
+<li> 1 GB of RAM </ul>li>
+<li> 1 GB of drive space </li>
 <ul>
 
 # Warning
