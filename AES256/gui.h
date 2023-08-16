@@ -566,7 +566,7 @@ namespace AES256
 						delete context;
 						CryptDestroyKey(encryptionkey);
 						CloseHandle(createdestinationfile);
-						textBox3->AppendText(L"Removing destination file file.\r\n");
+						textBox3->AppendText(L"Removing destination file.\r\n");
 						System::IO::File::Delete(destinationfilepath);
 						textBox3->AppendText(L"Decryption failed.\r\n");
 						textBox3->AppendText(L"\n*** Ended ***\r");
