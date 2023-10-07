@@ -421,9 +421,9 @@ namespace AES256
 				}
 				PBYTE buffer;
 				buffer = (BYTE*)malloc(bufferlength);
-				String^ sourcefilenamewithextention = System::IO::Path::GetFileName(sourcefilepath);
-				String^ sourcefilenamewithoutextention = System::IO::Path::GetFileNameWithoutExtension(sourcefilepath);
-				String^ destinationfilepath = System::IO::Path::GetFullPath(sourcefilepath->Replace(sourcefilenamewithextention, sourcefilenamewithoutextention));
+				String^ sourcefilenamewithextension = System::IO::Path::GetFileName(sourcefilepath);
+				String^ sourcefilenamewithoutextension = System::IO::Path::GetFileNameWithoutExtension(sourcefilepath);
+				String^ destinationfilepath = System::IO::Path::GetFullPath(sourcefilepath->Replace(sourcefilenamewithextension, sourcefilenamewithoutextension));
 				LPCWSTR destinationfile = context->marshal_as<LPCWSTR>(destinationfilepath);
 				HANDLE createdestinationfile;
 				textBox3->AppendText(L"Creating a destination file.\r\n");
@@ -452,11 +452,11 @@ namespace AES256
 				delete context;
 				CryptDestroyKey(encryptionkey);
 				CloseHandle(createdestinationfile);
-				String^ sourcefileextention = System::IO::Path::GetExtension(sourcefilepath);
-				String^ changefileextention = System::IO::Path::ChangeExtension(destinationfilepath, sourcefileextention);
+				String^ sourcefileextension = System::IO::Path::GetExtension(sourcefilepath);
+				String^ changefileextension = System::IO::Path::ChangeExtension(destinationfilepath, sourcefileextension);
 				textBox3->AppendText(L"Removing source file.\r\n");
 				System::IO::File::Delete(sourcefilepath);
-				System::IO::File::Move(destinationfilepath, changefileextention);
+				System::IO::File::Move(destinationfilepath, changefileextension);
 				textBox3->AppendText(L"Encrypted.\r\n");
 				textBox3->AppendText(L"\n*** Ended ***\r");
 				textBox1->Text = L"";
@@ -526,9 +526,9 @@ namespace AES256
 					}
 					PBYTE buffer;
 					buffer = (BYTE*)malloc(bufferlength);
-					String^ sourcefilenamewithextention = System::IO::Path::GetFileName(sourcefilepath);
-					String^ sourcefilenamewithoutextention = System::IO::Path::GetFileNameWithoutExtension(sourcefilepath);
-					String^ destinationfilepath = System::IO::Path::GetFullPath(sourcefilepath->Replace(sourcefilenamewithextention, sourcefilenamewithoutextention));
+					String^ sourcefilenamewithextension = System::IO::Path::GetFileName(sourcefilepath);
+					String^ sourcefilenamewithoutextension = System::IO::Path::GetFileNameWithoutExtension(sourcefilepath);
+					String^ destinationfilepath = System::IO::Path::GetFullPath(sourcefilepath->Replace(sourcefilenamewithextension, sourcefilenamewithoutextension));
 					LPCWSTR destinationfile = context->marshal_as<LPCWSTR>(destinationfilepath);
 					HANDLE createdestinationfile;
 					textBox3->AppendText(L"Creating a destination file.\r\n");
@@ -601,11 +601,11 @@ namespace AES256
 							delete context;
 							CryptDestroyKey(encryptionkey);
 							CloseHandle(createdestinationfile);
-							String^ sourcefileextention = System::IO::Path::GetExtension(sourcefilepath);
-							String^ changefileextention = System::IO::Path::ChangeExtension(destinationfilepath, sourcefileextention);
+							String^ sourcefileextension = System::IO::Path::GetExtension(sourcefilepath);
+							String^ changefileextension = System::IO::Path::ChangeExtension(destinationfilepath, sourcefileextension);
 							textBox3->AppendText(L"Removing source file.\r\n");
 							System::IO::File::Delete(sourcefilepath);
-							System::IO::File::Move(destinationfilepath, changefileextention);
+							System::IO::File::Move(destinationfilepath, changefileextension);
 							textBox3->AppendText(L"Decrypted.\r\n");
 							textBox3->AppendText(L"\n*** Ended ***\r");
 							textBox1->Text = L"";
