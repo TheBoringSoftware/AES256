@@ -1,4 +1,4 @@
-#include<windows.h>
+#include<Windows.h>
 #include<wincrypt.h>
 #include<msclr\marshal_windows.h>
 
@@ -659,14 +659,14 @@ namespace AES256
 				 }
 				 else
 				 {
-					button2->Enabled = true;
+				        button2->Enabled = true;
 					radioButton1->Enabled = true;
 					radioButton2->Enabled = true;
 				 }
 			 }
-	private: System::Void linkLabel1_LinkClicked(System::Object^  sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^  e) 
-			 {
-				 System::Diagnostics::Process::Start("msedge", "https://github.com/TheBoringSoftware/AES256");
-			 }
+	        private: System::Void linkLabel1_LinkClicked(System::Object^  sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^  e) 
+		{
+		       System::Diagnostics::Process::Start("msedge", "https://github.com/TheBoringSoftware/AES256");
+		}
 	};
 }
