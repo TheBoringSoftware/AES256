@@ -1,4 +1,4 @@
-#include"gui.h"
+#include "gui.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
